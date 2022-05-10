@@ -844,6 +844,19 @@ padding: 16px;
 
 
 
+.git__div {
+    background-color: black;
+    transform: translateY(350px);
+    padding: 32px;
+    margin: 16px;
+
+}
+
+.git__logo {
+    width: 200px;
+    height: 200px;
+    transform: translateX(825px);
+}
 
 
 
@@ -974,3 +987,4 @@ Sale
 <div class="preguntas__sale">
 HASTA 30% DE DESCUENTO
 </div>
+
