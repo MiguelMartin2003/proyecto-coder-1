@@ -850,7 +850,16 @@ padding: 16px;
 }
 
 .git__logo {
-    transform: translateX(825px);
+    padding: 0 825px;
+
+    transition: transform 5s;
+}
+
+.git__logo:hover {
+    transform:scale(0.1) rotate(360deg);
+    transform:
+    
+
 }
 
 
