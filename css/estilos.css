@@ -4,7 +4,15 @@ margin: 0;
 box-sizing: border-box;
 }
 
+.container {
+    margin-top: 64px;
+}
 
+.nuestros__locales {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 16px;
+}
 .grid__contenedor {
     display: grid;
     background-size: cover;
@@ -445,6 +453,7 @@ text-transform: uppercase;
     text-align: center;
     size: 64px;
     transform: translateY(30px);
+    
 }
 
 .preguntas__subtitulos {
