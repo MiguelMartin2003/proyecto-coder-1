@@ -8,6 +8,10 @@ box-sizing: border-box;
     margin-top: 64px;
 }
 
+.container__index {
+    transform: translateX(300px);
+}
+
 .nuestros__locales {
     font-size: 32px;
     color: white;
@@ -18,7 +22,7 @@ box-sizing: border-box;
     background-size: cover;
     background-image: url(../imagenes/blurry-gradient-haikei\ \(3\).png);
     grid-template-columns: 100%;
-    grid-template-rows: 5% 15% 10% 75% 15% 20% 5% 5%;
+    grid-template-rows: 5% 15% 10% 75% 40% 20% 5% 5%;
     height: 1000px;
 
     grid-template-areas: 
@@ -141,6 +145,10 @@ box-sizing: border-box;
     background-color: white;
     grid-area: 5;
 
+}
+
+.nuevos__logos {
+    grid-area: 5;
 }
 
 .flex__logos {
