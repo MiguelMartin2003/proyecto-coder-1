@@ -1,0 +1,24 @@
+.grid__header {
+    background-color: black;
+    grid-area: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header__img {
+    align-self: center;
+    margin: 0 35px;
+}
+
+.header__barra {
+    align-self: center;
+    justify-content: center;
+    transform: translateX(-50px);
+}
+
+.header__sucursales {
+    align-self: center;
+    justify-content: center;
+}

@@ -1,1040 +1,783 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
 .container__index {
-    transform: translateX(300px);
+  transform: translateX(300px);
 }
 
 .nuestros__locales {
-    font-size: 25px;
-    color: blue;
-    margin-bottom: 16px;
+  font-size: 25px;
+  color: blue;
+  margin-bottom: 16px;
 }
+
 .grid__contenedor {
-    display: grid;
-    background-size: cover;
-
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 15% 10% 75% 40% 20% 5% 5%;
-    height: 1000px;
-
-    grid-template-areas: 
-    "ele1"
-    "ele2"
-    "ele3"
-    "ele4"
-    "ele5"
-    "ele6"
-    "ele7"
-    "ele8";
+  display: grid;
+  background-size: cover;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 15% 10% 75% 40% 20% 5% 5%;
+  height: 1000px;
+  grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6" "ele7" "ele8";
 }
 
 .grid__top {
-    background-color: yellow;
-    grid-area: 1;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    justify-self: stretch;
-    align-self: center;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    transform: translateY(-475px);
-    
-}
-
-
-.grid__header {
-    background-color: black;
-    grid-area: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.header__img {
-    align-self: center;
-    margin: 0 35px;
-}
-
-.header__barra {
-    align-self: center;
-    justify-content: center;
-    transform: translateX(-50px);
-}
-
-.header__sucursales {
-    align-self: center;
-    justify-content: center;
-}
-
-
-.grid__nav {
-
-    grid-area: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    transform: translateX(60px);
-
-}
-
-.nav__mobile {
-    display: none;
-}
-
-.nav__lista {
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    text-transform: uppercase;
-    padding: 32px;
-    align-self: center;
-    justify-self: center;
-}
-
-.nav__enlace {
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    text-transform: uppercase;
-}
-
-.grid__section {
-    grid-area: 4;
-    display: flex;
-    align-items: center;
-
-}
-
-.section__tarjeta {
-    
-    
-    grid-area: 4;
-    background-color: rgb(0, 0, 0);
-    color: rgb(187, 255, 0);
-    width: 1300px;
-    min-height: 400px;
-    padding: 32px;
-    padding-top: 8px;
-    border: 2px solid rgb(187, 255, 0);
-    border: 2px double;
-    margin-left: 325px;
-
-    overflow: hidden;
-}
-
-.section__airmax {   
-    margin-bottom: 35px;
-    }
-
-.section__video {
-        margin: 32px;
-    }
-
-.grid__logos{
-    background-color: white;
-    grid-area: 5;
-
-}
-
-.nuevos__logos {
-    grid-area: 5;
-    background-color: black;
-    transform: translateY(100px);
-    
-}
-
-
-.sale__productos {
-    grid-area: 4;
-}
-
-.flex__logos {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    overflow: hidden;
-    margin: 0 100px 2rem 100px;
-
-}
-
-.flex__items {
-    background-color: white;
-    color: white;
-    height: 200px;
-    width: 400px;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-color: black;
-    border-style: solid;
-
-}
-
-.flex__titulo {
-    background-color: black;
-    color: yellow;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: larger;
-    
-
-    transform: translateY(-35px)
-}
-
-.flex__imagen {
-    width: 275px;
-    height: 175px;
-    background-size: cover;
-}
-
-.logos__contenedor {
-    max-width: 1200px;
-}
-
-.logos__titulo {
-    font-size: 30px;
-    margin-bottom: 2rem;
-
-}
-
-.logos__flex {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: space-between;
-    
-}
-
-.logos__item {
-    background-color: white;
-    color: white;
-    width: 50%;
-    max-width: 1500px;
-    height: 50px;
-    border-radius: 8px;
-    padding: 1rem;
-    display: flex
-
-}
-
-.grid__footer {
-    background-color: black;
-    grid-area: 6;
-    transform: translateY(100px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    padding: 32px;
-
-
-}
-
-.footer__div {
-    align-items: center;
-    text-align: center;
-    transform: translateY();
-
-}
-.footer__suscribete {
-background-color: black;
-transform: translateY(50px);
-font-family: Arial, Helvetica, sans-serif;
-font-size: large;
-text-transform: uppercase; 
-
-}
-
-.grid__social {
-    background-color: black;
-    grid-area: 7;
-    transform: translateY(100px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-
-}
-
-.grid__derechos {
-    background-color: yellow;
-    grid-area: 8;
-    transform: translateY(80px);
-    color: black;
-    text-align: center;
-    align-items: center;
-    align-self: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-
-}
-
-.grid__medias {
-    display: flex;
-    flex-direction: column;
-
-    transform: translateY(250px);
-}
-
-.medias {
-    display: flex;
-    flex-direction: row;
-}
-
-.seguinos__twitter {
-    display: flex;
-    background-color: black;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-height: 125px;   
-    margin: 64px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: white;
-}
-
-.seguinos__twittersub {
-    color: rgb(29, 134, 167);
-    display: flex;
-    margin: 16px;
-    font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.seguinos__twitterlogo {
-    display: flex;
-    object-fit: cover;
-    width: 75px;
-    height: 75px;
-    margin: 16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.body {
-
-    background-size: cover;
-    background-image: url(../imagenes/blurry-gradient-haikei\ \(3\).png);
-
-
-}
-
-
-.todo {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-.cuotas {
-        background-color: rgb(187, 255, 0);
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        display: inline-block;
-        padding: 0px;
-        position: fixed;
-        left: 0%;
-        top: 0%;   
-}
-
-.cuotas__sub {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgb(187, 255, 0);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: inline-block;
-    padding-left: 100%;
-    position: fixed;
-    left: 0%;
-    top: 0%; 
-}
-
-.header {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 125px;   
-}
-
-.imagenfooter {
-    margin: 32px;
-}
-
-.barrafooter {
-    display: flex;
-    width: 300px;
-    margin-right: 175px;
-}
-
-.barrafooter__from {
-    width: 300px;
-    display: flex;
-}
-
-.barrafooter__div {
-    width: 300px;
-}
-
-.barrafooter__label {
-    width: 300px;
-}
-
-.barrafooter__input{
-    width: 300px;
-
-}
-
-.nav__lista {
-    display: flex;
-    list-style: none;
-    margin-right: 64px;
-
-}
-
-
-.nav__item {
-    margin: 32px;
-    color: white;
-}
-
-
-
-.sucursales {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: white;
-}
-
-.sucursales__a {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: white;
-    margin-right: 64px;
-}
-
-.enlaces {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.preguntas {
-    background-color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: white;
-    justify-self: center;
-    text-align: center;
-    size: 64px;
-    transform: translateY(30px);
-    
-}
-
-.preguntas__subtitulos {
-    padding: 8px;
-    padding-top: 64px;
-    margin: 64px 120px;
-    color: black;
-    font-size: large;
-}
-
-.preguntas__sale {
-    background-color: rgb(187, 255, 0);
-    color: black;
-    justify-self: center;
-    text-align: center;
-    size: 64px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    transform: translateY(30px);
-}
-
-
-
-
-
-.marcas {
-
-    margin-top: 50px;
-    padding-bottom: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-
-}
-
-.marcas__foto1 {
-    object-fit: cover;
-    margin: 16px;
-    margin-bottom: 64px;
-    display: flex;
-    width: 250px;
-    height: 150px;
-}
-
-
-
-.footerabajo {
-    position: absolute;
-}
-
-.footer {
-    display: grid;
-    background-color: black;
-
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 200px;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 60% 25% 15%;
-    margin-top: auto;
-
-
-    grid-template-areas: 
-    "ele1 ele2 ele3"
-    "ele4 ele5 ele6"
-    "ele7 ele7 ele7";
-}
-
-.footer__image {
-    
-    object-fit: cover;
-
-    display: grid;
-    grid-area: ele1;
-    margin: 16px;
-    margin-left: 130px;
-}
-
-.footer__sus {
-    display: grid;
-    grid-area: ele2;
-    justify-self: flex-end;
-    align-self: center;
-    
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: white;
-}
-
-.footer__form {
-    display: grid;
-    grid-area: ele3;
-    justify-self: center;
-    align-self: center;
-}
-
-.footer__div {
-    display: grid;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 20px;
-    margin-right: 130px;
-}
-
-
-
-.footerbarra {
-display: grid;
-width: 100px;
-}
-
-.footer__input {
-    display: grid;
-}
-
-.footer__boton {
-    display: grid;
-}
-
-.temporal1 {
-
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    margin: 16px 32px;
-}
-
-.temporal1__texto {
-position: absolute;
-align-self: center;
-justify-self: center;
-color: rgb(187, 255, 0);
-background-color: rgb(0, 0, 0);
-position: relative;
-text-transform: uppercase;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-font-size: large;
-}
-
-.temporal2 {
-
-    color: rgb(187, 255, 0);
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    margin: 16px 32px;
-}
-
-.temporal2__texto {
-    position: absolute;
-    align-self: center;
-    justify-self: center; 
-    color: rgb(187, 255, 0);
-background-color: rgb(0, 0, 0);
-position: relative;
-text-transform: uppercase;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-font-size: large;
-}
-
-
-
-.temporal3 {
-
-    color: rgb(187, 255, 0);
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    margin: 16px 32px;
-}
-
-.temporal3__texto  {
-    position: absolute;
-    align-self: center;
-    justify-self: center; 
-    color: rgb(187, 255, 0);
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: large;
-}
-
-
-
-
-
-.temporal4 {
-    display: grid;
-    grid-area: ele7;
-    color: rgb(0, 0, 0);
-    background-color: rgb(187, 255, 0);
-    justify-self: stretch;
-    align-self: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.seccion {
-    padding-top: 4rem;
-
-}
-
-.tarjeta {
-background-color: rgb(0, 0, 0);
-color: rgb(187, 255, 0);
-width: 1300px;
-min-height: 400px;
-padding: 32px;
-padding-top: 8px;
-border: 2px solid rgb(187, 255, 0);
-border: 2px double;
-margin-left: 325px;
-
-overflow: hidden;
-
-
-}
-
-.tarjeta__imagen {
-    width: 100%;
-    height: 300px;
-border-radius: 16px;
-border: 2px solid rgb(187, 255, 0);
-border: 2px double;
-margin: 8px;
-}
-
-
-
-.tarjeta__titulo {
-text-align: center;
-margin: 1rem;
-font-weight: bold;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-color: rgb(29, 134, 167);
-font-size: 32px;
-
-}
-
-.tarjeta__texto {
-text-align: center;
-font-size: 16px;
-border-bottom: 2px solid darkslategray;
-font-family: 'Times New Roman', Times, serif;
-padding: 16px;
-
-}
-
-.tarjeta__precio {
-    margin: 16px;
-    font-size: 45px;
-    text-align: center;
-    font-style: italic;
-}
-
-.tarjeta__oferta {
-    background-color: darkslategray;
-    color: rgb(187, 255, 0);
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 16px;
-    display: inline-block;
-    border-radius: 16px;
-    position: absolute;
-    top: 41px;
-    right: 25px;
-
-
-}
-
-.whatsapp {
-    background-color: rgb(187, 255, 0);
-    color: rgb(0, 0, 0);
-    display: block;
-    padding: 8px 900px 8px 900px;
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    max-height: 32px;
-    white-space: nowrap;
-    justify-self: center;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;   
-}
-
-.fondo {
-    background-image: url(/imagenes/blurry-gradient-haikei.png);
-    background-size: cover;
-}
-
-.git__div {
-    background-color: black;
-    transform: translateY(350px);
-    padding: 32px;
-    margin: 16px;
-}
-
-.git__logo {
-    padding: 0 825px;
-
-    transition: transform 5s;
-}
-
-.git__logo:hover {
-    transform:scale(0.1) rotate(360deg);
-    transform:
-    
-
-}
-
-.header__img {
-    transition: 2s;
-}
-.header__img:hover {
-    transform:scale(1.5) rotate(360deg);
+  background-color: yellow;
+  grid-area: 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-self: stretch;
+  align-self: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  transform: translateY(-475px);
 }
 
 .grid__top {
-    transition: 1s;
+  transition: 1s;
 }
 
 .grid__top:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width:600px) {
-    .grid__header {
-        background-color: black;
-        flex-direction: column;
-    }
-    .grid__contenedor {
-        display: grid;
-        background-size: cover;
-        
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 20% 10% 145% 85% 30% 5% 5%;
-        height: 1000px;
-    
-        grid-template-areas: 
-        "ele1"
-        "ele2"
-        "ele3"
-        "ele4"
-        "ele5"
-        "ele6"
-        "ele7"
-        "ele8";
-    }
-
-
-    .grid__footer {
-        flex-direction: column;
-        align-content: space-between;
-        align-items: center;
-        
-    }
-    .footer__suscribete {
-        background-color: black;
-        transform: translateY(50px);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: large;
-        text-transform: uppercase; 
-        text align center
-        
-        
-        }
-        .footer__div {
-            align-items: center;
-            text-align: center;
-            transform: translatex(65px);
-        
-        }
-
-        .header__barra {
-            align-self: center;
-            justify-content: center;
-            transform: translateX(-10px);
-        }
-        
-        .header__sucursales {
-            align-self: center;
-            justify-content: center;
-            transform: translateX(30px);
-        }
-        .grid__section {
-            display: flex;
-            justify-content: center;
-            justify-items: center;
-        }
-
-        .section__tarjeta {
-            transform: translateX(-175px);
-            width: 650px;
-            overflow: visible;
-        }
-        .section__video {
-            width: 400px;
-        }
-        .section__airmax {
-            width: 450px;
-            transform: translateX(30px);
-        }
-        .grid__logos {
-            flex-direction: column;
-        }
-        .flex__logos {
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-        }
-        .flex__items {
-            height: 125px;
-            width: 300px;
-        }
-
-        .flex__imagen {
-            height: 95px;
-        }
-        .flex__titulo {
-            font-size: 32px;
-        }
-
-
-        .grid__nav {
-            overflow: visible;
-            display: flex;
-        }
-        
-        .nav__lista {
-            flex-direction: column;
-            overflow: scroll;
-            max-height: 100px;
-        }
-
-        .grid__medias {
-            transform: translateY(400px);
-        }
-
-        .grid__top {
-            overflow: hidden;
-        }
-
-        .preguntas {
-            transform: translateY(-30px);
-        }
+.grid__header {
+  background-color: black;
+  grid-area: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
 }
 
-<div class="preguntas">
-Sale
-</div>
+.header__img {
+  align-self: center;
+  margin: 0 35px;
+}
 
-<div class="preguntas__sale">
-HASTA 30% DE DESCUENTO
-</div>
+.header__barra {
+  align-self: center;
+  justify-content: center;
+  transform: translateX(-50px);
+}
+
+.header__sucursales {
+  align-self: center;
+  justify-content: center;
+}
+
+.grid__nav {
+  grid-area: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transform: translateX(60px);
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__lista {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-transform: uppercase;
+  padding: 32px;
+  align-self: center;
+  justify-self: center;
+}
+
+.nav__enlace {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.seccion {
+  padding-top: 4rem;
+}
+
+.tarjeta {
+  background-color: black;
+  color: #bbff00;
+  width: 1300px;
+  min-height: 400px;
+  padding: 32px;
+  padding-top: 8px;
+  border: 2px solid #bbff00;
+  border: 2px double;
+  margin-left: 325px;
+  overflow: hidden;
+}
+
+.tarjeta__imagen {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  border: 2px solid #bbff00;
+  border: 2px double;
+  margin: 8px;
+}
+
+.tarjeta__titulo {
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1d86a7;
+  font-size: 32px;
+}
+
+.tarjeta__texto {
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid darkslategray;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 16px;
+}
+
+.tarjeta__precio {
+  margin: 16px;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+}
+
+.tarjeta__oferta {
+  background-color: darkslategray;
+  color: #bbff00;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px;
+  display: inline-block;
+  border-radius: 16px;
+  position: absolute;
+  top: 41px;
+  right: 25px;
+}
+
+.grid__section {
+  grid-area: 4;
+  display: flex;
+  align-items: center;
+}
+
+.section__tarjeta {
+  grid-area: 4;
+  background-color: black;
+  color: #bbff00;
+  width: 1300px;
+  min-height: 400px;
+  padding: 32px;
+  padding-top: 8px;
+  border: 2px solid #bbff00;
+  border: 2px double;
+  margin-left: 325px;
+  overflow: hidden;
+}
+
+.section__airmax {
+  margin-bottom: 35px;
+}
+
+.section__video {
+  margin: 32px;
+}
+
+.nuevos__logos {
+  grid-area: 5;
+  background-color: black;
+  transform: translateY(100px);
+}
+
+.grid__footer {
+  background-color: black;
+  grid-area: 6;
+  transform: translateY(100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 32px;
+}
+
+.footer__div {
+  align-items: center;
+  text-align: center;
+  transform: translateY();
+}
+
+.footer__suscribete {
+  background-color: black;
+  transform: translateY(50px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.grid__social {
+  background-color: black;
+  grid-area: 7;
+  transform: translateY(100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.grid__derechos {
+  background-color: yellow;
+  grid-area: 8;
+  transform: translateY(80px);
+  color: black;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.grid__medias {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(250px);
+}
+
+.medias {
+  display: flex;
+  flex-direction: row;
+}
+
+.seguinos__twitter {
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 125px;
+  margin: 64px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white;
+}
+
+.seguinos__twittersub {
+  color: #1d86a7;
+  display: flex;
+  margin: 16px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.seguinos__twitterlogo {
+  display: flex;
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  margin: 16px;
+}
+
+.todo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cuotas {
+  background-color: #bbff00;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+}
+
+.cuotas__sub {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #bbff00;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 100%;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 125px;
+}
+
+.imagenfooter {
+  margin: 32px;
+}
+
+.barrafooter {
+  display: flex;
+  width: 300px;
+  margin-right: 175px;
+}
+
+.barrafooter__from {
+  width: 300px;
+  display: flex;
+}
+
+.barrafooter__div {
+  width: 300px;
+}
+
+.barrafooter__label {
+  width: 300px;
+}
+
+.barrafooter__input {
+  width: 300px;
+}
+
+.nav__lista {
+  display: flex;
+  list-style: none;
+  margin-right: 64px;
+}
+
+.nav__item {
+  margin: 32px;
+  color: white;
+}
+
+.sucursales {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: white;
+}
+
+.sucursales__a {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: white;
+  margin-right: 64px;
+}
+
+.enlaces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preguntas {
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-self: center;
+  text-align: center;
+  size: 64px;
+  transform: translateY(30px);
+}
+
+.preguntas__subtitulos {
+  padding: 8px;
+  padding-top: 64px;
+  margin: 64px 120px;
+  color: black;
+  font-size: large;
+}
+
+.preguntas__sale {
+  background-color: #bbff00;
+  color: black;
+  justify-self: center;
+  text-align: center;
+  size: 64px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  transform: translateY(30px);
+}
+
+.marcas {
+  margin-top: 50px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.marcas__foto1 {
+  object-fit: cover;
+  margin: 16px;
+  margin-bottom: 64px;
+  display: flex;
+  width: 250px;
+  height: 150px;
+}
+
+.footerabajo {
+  position: absolute;
+}
+
+.footer {
+  display: grid;
+  background-color: black;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 200px;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 60% 25% 15%;
+  margin-top: auto;
+  grid-template-areas: "ele1 ele2 ele3" "ele4 ele5 ele6" "ele7 ele7 ele7";
+}
+
+.footer__image {
+  object-fit: cover;
+  display: grid;
+  grid-area: ele1;
+  margin: 16px;
+  margin-left: 130px;
+}
+
+.footer__sus {
+  display: grid;
+  grid-area: ele2;
+  justify-self: flex-end;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: white;
+}
+
+.footer__form {
+  display: grid;
+  grid-area: ele3;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer__div {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-right: 130px;
+}
+
+.footerbarra {
+  display: grid;
+  width: 100px;
+}
+
+.footer__input {
+  display: grid;
+}
+
+.footer__boton {
+  display: grid;
+}
+
+.temporal1 {
+  background-color: black;
+  position: relative;
+  margin: 16px 32px;
+}
+
+.temporal1__texto {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  color: #bbff00;
+  background-color: black;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.temporal2 {
+  color: #bbff00;
+  background-color: black;
+  position: relative;
+  margin: 16px 32px;
+}
+
+.temporal2__texto {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  color: #bbff00;
+  background-color: black;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.temporal3 {
+  color: #bbff00;
+  background-color: black;
+  position: relative;
+  margin: 16px 32px;
+}
+
+.temporal3__texto {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  color: #bbff00;
+  background-color: black;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.temporal4 {
+  display: grid;
+  grid-area: ele7;
+  color: black;
+  background-color: #bbff00;
+  justify-self: stretch;
+  align-self: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.seccion {
+  padding-top: 4rem;
+}
+
+.tarjeta {
+  background-color: black;
+  color: #bbff00;
+  width: 1300px;
+  min-height: 400px;
+  padding: 32px;
+  padding-top: 8px;
+  border: 2px solid #bbff00;
+  border: 2px double;
+  margin-left: 325px;
+  overflow: hidden;
+}
+
+.tarjeta__imagen {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  border: 2px solid #bbff00;
+  border: 2px double;
+  margin: 8px;
+}
+
+.tarjeta__titulo {
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1d86a7;
+  font-size: 32px;
+}
+
+.tarjeta__texto {
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid darkslategray;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 16px;
+}
+
+.tarjeta__precio {
+  margin: 16px;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+}
+
+.tarjeta__oferta {
+  background-color: darkslategray;
+  color: #bbff00;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px;
+  display: inline-block;
+  border-radius: 16px;
+  position: absolute;
+  top: 41px;
+  right: 25px;
+}
+
+.whatsapp {
+  background-color: #bbff00;
+  color: black;
+  display: block;
+  padding: 8px 900px 8px 900px;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  max-height: 32px;
+  white-space: nowrap;
+  justify-self: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.fondo {
+  background-image: url(/imagenes/blurry-gradient-haikei.png);
+  background-size: cover;
+}
+
+.git__div {
+  background-color: black;
+  transform: translateY(350px);
+  padding: 32px;
+  margin: 16px;
+}
+
+.git__logo {
+  padding: 0 825px;
+  transition: transform 5s;
+}
+
+.git__logo:hover {
+  transform: scale(0.1) rotate(360deg);
+}
+
+.header__img {
+  transition: 2s;
+}
+
+.header__img:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.grid__top {
+  transition: 1s;
+}
+
+.grid__top:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+  .grid__header {
+    background-color: black;
+    flex-direction: column;
+  }
+  .grid__contenedor {
+    display: grid;
+    background-size: cover;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 10% 145% 85% 30% 5% 5%;
+    height: 1000px;
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6" "ele7" "ele8";
+  }
+  .grid__footer {
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+  }
+  .footer__suscribete {
+    background-color: black;
+    transform: translateY(50px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .footer__div {
+    align-items: center;
+    text-align: center;
+    transform: translatex(65px);
+  }
+  .header__barra {
+    align-self: center;
+    justify-content: center;
+    transform: translateX(-10px);
+  }
+  .header__sucursales {
+    align-self: center;
+    justify-content: center;
+    transform: translateX(30px);
+  }
+  .grid__section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .section__tarjeta {
+    transform: translateX(-175px);
+    width: 650px;
+    overflow: visible;
+  }
+  .section__video {
+    width: 400px;
+  }
+  .section__airmax {
+    width: 450px;
+    transform: translateX(30px);
+  }
+  .grid__logos {
+    flex-direction: column;
+  }
+  .flex__logos {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .flex__items {
+    height: 125px;
+    width: 300px;
+  }
+  .flex__imagen {
+    height: 95px;
+  }
+  .flex__titulo {
+    font-size: 32px;
+  }
+  .grid__nav {
+    overflow: visible;
+    display: flex;
+  }
+  .nav__lista {
+    flex-direction: column;
+    overflow: scroll;
+    max-height: 100px;
+  }
+  .grid__medias {
+    transform: translateY(400px);
+  }
+  .grid__top {
+    overflow: hidden;
+  }
+  .preguntas {
+    transform: translateY(-30px);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

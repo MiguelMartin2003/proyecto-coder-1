@@ -1,0 +1,122 @@
+@media screen and (max-width:600px) {
+    .grid__header {
+        background-color: black;
+        flex-direction: column;
+    }
+    .grid__contenedor {
+        display: grid;
+        background-size: cover;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 20% 10% 145% 85% 30% 5% 5%;
+        height: 1000px;
+    
+        grid-template-areas: 
+        "ele1"
+        "ele2"
+        "ele3"
+        "ele4"
+        "ele5"
+        "ele6"
+        "ele7"
+        "ele8";
+    }
+
+
+    .grid__footer {
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        
+    }
+    .footer__suscribete {
+        background-color: black;
+        transform: translateY(50px);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-transform: uppercase; 
+        text-align: center;
+        
+        
+        }
+        .footer__div {
+            align-items: center;
+            text-align: center;
+            transform: translatex(65px);
+        
+        }
+
+        .header__barra {
+            align-self: center;
+            justify-content: center;
+            transform: translateX(-10px);
+        }
+        
+        .header__sucursales {
+            align-self: center;
+            justify-content: center;
+            transform: translateX(30px);
+        }
+        .grid__section {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .section__tarjeta {
+            transform: translateX(-175px);
+            width: 650px;
+            overflow: visible;
+        }
+        .section__video {
+            width: 400px;
+        }
+        .section__airmax {
+            width: 450px;
+            transform: translateX(30px);
+        }
+        .grid__logos {
+            flex-direction: column;
+        }
+        .flex__logos {
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+        .flex__items {
+            height: 125px;
+            width: 300px;
+        }
+
+        .flex__imagen {
+            height: 95px;
+        }
+        .flex__titulo {
+            font-size: 32px;
+        }
+
+
+        .grid__nav {
+            overflow: visible;
+            display: flex;
+        }
+        
+        .nav__lista {
+            flex-direction: column;
+            overflow: scroll;
+            max-height: 100px;
+        }
+
+        .grid__medias {
+            transform: translateY(400px);
+        }
+
+        .grid__top {
+            overflow: hidden;
+        }
+
+        .preguntas {
+            transform: translateY(-30px);
+        }
+}
+
