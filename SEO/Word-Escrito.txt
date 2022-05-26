@@ -1,0 +1,52 @@
+Aplicar Seo a nuestra Página
+
+Descripciones:
+•	Index: Sitio web de Grid en el que encontrarás las mejores zapatillas del país al mejor precio.
+•	Sale: En esta página se encuentran nuestras ofertas.
+•	Productos: En esta página se encuentran nuestros productos
+•	Preguntas-frecuentes: en esta página se encuentran las preguntas que nos realizan frecuentemente.
+•	Contactos: en esta página se pueden encontrar con las distintas maneras para contactarnos 
+Títulos: Agregué títulos correspondientes a cada página con información simple y concisa.
+ <title>Grid - contacto</title>
+ <title>Grid - Preguntas - Frecuentes</title>
+ <title>Grid - Productos</title>
+ <title>Grid - Sale - hasta 50%</title>
+ <title>Grid - Calzado</title>
+
+
+Palabras claves: 
+Contactos: "Grid, Zapatillas, Ropa, Indumentaria, Contacto, Contactar" >
+Preguntas-frecuentes: "Grid, Zapatillas, Ropa, Indumentaria, Devolucion, Pago, Envio, Preguntas"
+Productos: "Grid, Zapatillas, Ropa, Indumentaria, Productos, Argentina, Stock"
+Sale: "Grid, Zapatillas, Ropa, Indumentaria, Productos, Argentina, Stock, Sale, Rebajas"
+Index: "Grid, Zapatillas, Ropa, Indumentaria, Productos, Argentina, Stock, Nike, Adidas, jordan, New Balance"
+
+Enlaces:
+Utilice enlaces para conectar las páginas entre si. También incluí un archivo “.xml” con todos los enlaces.
+
+<url>
+  <loc>https://miguelmartin2003.github.io/proyecto-coder-1/index.html</loc>
+  <lastmod>2022-05-19T22:09:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://miguelmartin2003.github.io/proyecto-coder-1/pages/contactos.html</loc>
+  <lastmod>2022-05-19T22:09:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://miguelmartin2003.github.io/proyecto-coder-1/pages/preguntas-frecuentes.html</loc>
+  <lastmod>2022-05-19T22:09:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://miguelmartin2003.github.io/proyecto-coder-1/pages/productos.html</loc>
+  <lastmod>2022-05-19T22:09:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://miguelmartin2003.github.io/proyecto-coder-1/pages/sale.html</loc>
+  <lastmod>2022-05-19T22:09:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
