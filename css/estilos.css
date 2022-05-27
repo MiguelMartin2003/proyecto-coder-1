@@ -809,7 +809,7 @@
   background-color: black;
 }
 
-div {
+aside {
   background-color: red;
 }
 
@@ -842,6 +842,6 @@ div {
 .box-medium {
   height: 500px;
   width: 500px;
-  background-color: red;
+  background-color: black;
 }
 /*# sourceMappingURL=estilos.css.map */

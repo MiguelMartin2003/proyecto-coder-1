@@ -33,7 +33,7 @@ $estilos: (
     color: red
 );
 
-div {
+aside {
     background-color: map-get($estilos, color);
 }
 
@@ -71,5 +71,5 @@ div {
 
 .box-medium {
     @include sizes (500px, 500px);
-    background-color: red;
+    background-color: black;
 }
