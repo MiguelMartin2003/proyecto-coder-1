@@ -1,0 +1,75 @@
+$vista: mobile;
+$color: redo;
+
+@if $vista == desktop {
+    $color: black;
+}   @else if $vista == mobile {
+    $color: white;
+}
+
+.sass-2 {
+    color: $color
+}
+
+@each $color in red, yellow, black {
+    .#{$color}{
+        background-color: #{$color};
+    }
+}
+
+$redes: (
+    twitter: blue,
+    reddit: red,
+    facebook: black
+);
+
+@each $clave, $valor in $redes {
+    .brb {
+        background-color: $valor;
+    }
+}
+
+$estilos: (
+    color: red
+);
+
+div {
+    background-color: map-get($estilos, color);
+}
+
+.boton {
+    width:200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.boton--aceptar {
+    @extend .boton;
+    background-color: green;
+    color: yellow;
+}
+
+.boton--cancelar {
+    @extend .boton;
+    background-color: red;
+    color: yellow;
+}
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.box-small {
+    @include sizes (100px, 100px);
+    background-color: navy;
+}
+
+.box-medium {
+    @include sizes (500px, 500px);
+    background-color: red;
+}

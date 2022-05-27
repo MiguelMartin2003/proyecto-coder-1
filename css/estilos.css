@@ -780,4 +780,68 @@
     transform: translateY(-30px);
   }
 }
+
+.sass-2 {
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+.brb {
+  background-color: blue;
+}
+
+.brb {
+  background-color: red;
+}
+
+.brb {
+  background-color: black;
+}
+
+div {
+  background-color: red;
+}
+
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.boton--aceptar {
+  background-color: green;
+  color: yellow;
+}
+
+.boton--cancelar {
+  background-color: red;
+  color: yellow;
+}
+
+.box-small {
+  height: 100px;
+  width: 100px;
+  background-color: navy;
+}
+
+.box-medium {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
 /*# sourceMappingURL=estilos.css.map */
