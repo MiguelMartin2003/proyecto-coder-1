@@ -707,7 +707,7 @@
     display: grid;
     background-size: cover;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 20% 10% 115% 55% 40% 5% 5%;
+    grid-template-rows: 5% 20% 40% 115% 55% 40% 5% 5%;
     height: 1000px;
     grid-template-areas: "ele1"
  "ele2"
@@ -782,14 +782,55 @@
     font-size: 32px;
   }
   .grid__nav {
-    overflow: visible;
-    display: flex;
+    
+    
+    background-color: white;
+    width: 60%;
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .nav__lista {
     flex-direction: column;
-    overflow: scroll;
-    max-height: 100px;
+    justify-content:flex-start;
+    width: 500px;
+    height: 500px;   
   }
+
+  #lateral {
+    display: block;
+    background-color: white;
+    flex-direction: column;
+    width: 80%;
+    height: 1000px;
+    
+
+    left: -100%;
+    z-index: 100;
+    color: white;
+  }
+  #lateral:target {
+    
+    left: 50px;
+    color: white;
+    display: visible;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .jam jam-menu {
+    color: black;
+  }
+
+  .header__open {
+    color: black;
+    transform: translateY(250px);
+    size: 500px;
+
+  }
+
+
   .grid__medias {
     transform: translateY(400px);
   }
