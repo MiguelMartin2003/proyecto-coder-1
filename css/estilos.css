@@ -24,7 +24,14 @@
   grid-template-columns: 100%;
   grid-template-rows: 5% 15% 10% 75% 40% 20% 5% 5%;
   height: 1000px;
-  grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6" "ele7" "ele8";
+  grid-template-areas: "ele1"
+ "ele2"
+ "ele3"
+ "ele4"
+ "ele5"
+ "ele6"
+ "ele7"
+ "ele8";
 }
 
 .grid__top {
@@ -401,7 +408,7 @@
 .preguntas__subtitulos {
   padding: 8px;
   padding-top: 64px;
-  margin: 64px 120px;
+  margin: 16px 120px;
   color: black;
   font-size: large;
 }
@@ -450,7 +457,9 @@
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 60% 25% 15%;
   margin-top: auto;
-  grid-template-areas: "ele1 ele2 ele3" "ele4 ele5 ele6" "ele7 ele7 ele7";
+  grid-template-areas: "ele1 ele2 ele3"
+ "ele4 ele5 ele6"
+ "ele7 ele7 ele7";
 }
 
 .footer__image {
@@ -685,6 +694,10 @@
   transform: scale(1.2);
 }
 
+.sale__productos {
+  transform: translateY(225px);
+}
+
 @media screen and (max-width: 600px) {
   .grid__header {
     background-color: black;
@@ -694,9 +707,16 @@
     display: grid;
     background-size: cover;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 20% 10% 145% 85% 30% 5% 5%;
+    grid-template-rows: 5% 20% 10% 115% 55% 40% 5% 5%;
     height: 1000px;
-    grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6" "ele7" "ele8";
+    grid-template-areas: "ele1"
+ "ele2"
+ "ele3"
+ "ele4"
+ "ele5"
+ "ele6"
+ "ele7"
+ "ele8";
   }
   .grid__footer {
     flex-direction: column;
@@ -843,5 +863,9 @@ aside {
   height: 500px;
   width: 500px;
   background-color: black;
+}
+
+.sale__productos {
+  transform: translateY(-25px);
 }
 /*# sourceMappingURL=estilos.css.map */
