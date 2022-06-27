@@ -49,13 +49,7 @@
   transform: translateY(-475px);
 }
 
-.grid__top {
-  transition: 1s;
-}
 
-.grid__top:hover {
-  transform: scale(1.2);
-}
 
 .grid__header {
   background-color: black;
@@ -87,7 +81,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  transform: translateX(60px);
+  
 }
 
 .nav__mobile {
@@ -199,7 +193,7 @@
 }
 
 .section__video {
-  margin: 32px;
+  margin: 32px 200px;
 }
 
 .nuevos__logos {
@@ -670,30 +664,9 @@
   margin: 16px;
 }
 
-.git__logo {
-  padding: 0 825px;
-  transition: transform 5s;
-}
 
-.git__logo:hover {
-  transform: scale(0.1) rotate(360deg);
-}
 
-.header__img {
-  transition: 2s;
-}
 
-.header__img:hover {
-  transform: scale(1.5) rotate(360deg);
-}
-
-.grid__top {
-  transition: 1s;
-}
-
-.grid__top:hover {
-  transform: scale(1.2);
-}
 
 .sale__productos {
   margin: 150px 25px;
@@ -756,11 +729,13 @@
   }
   .section__tarjeta {
     transform: translateX(-175px);
-    width: 650px;
+    width: 600px;
     overflow: visible;
   }
   .section__video {
-    width: 400px;
+    width: 300px;
+    height: 400px;
+    margin: 32px 50px;
   }
   .section__airmax {
     width: 450px;
@@ -811,7 +786,8 @@
 
     left: -100%;
     z-index: 100;
-    color: white;
+    color: black;
+    
   }
   #lateral:target {
     
